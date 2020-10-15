@@ -8,7 +8,7 @@
 - WebAPIリファレンス
 - WebSocketフロー
 - システム構成図
-- システム化の範囲と目的
+- [システム化の範囲と目的](project_scope.md)
   - v1
   - v2
   - v3
