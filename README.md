@@ -6,7 +6,7 @@
 
 - アブストラクト
 - ターゲット層について
-- [システム構成図](architecture.md)
+- [システム構成図](system_architecture.md)
 - [システム化の範囲と目的](project_scope.md)
 - スケジュール
 - 画面遷移図
