@@ -18,3 +18,4 @@
   - SQLite
   - redis
   - MySQL
+- [レートとランク一覧](rate_and_rank.md)
