@@ -7,7 +7,7 @@
 - 画面遷移図
 - WebAPIリファレンス
 - WebSocketフロー
-- システム構成図
+- [システム構成図](architecture.md)
 - [システム化の範囲と目的](project_scope.md)
   - v1
   - v2
