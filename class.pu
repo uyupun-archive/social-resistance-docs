@@ -1,0 +1,49 @@
+@startuml
+
+title クラス図（ゲームのコア部分のみ）
+
+class gohome {
+  プレイ画面
+}
+
+class Dealer {
+  ゲームの進行
+}
+
+class World {
+  ゲーム上のワールド
+}
+
+class Field {
+  ワールド内のフィールド
+}
+
+class House {
+  ワールド内の家オブジェクト
+}
+
+class UsagiSan {
+  ワールド内のうさぎさんオブジェクト
+}
+
+class BaikinKun {
+  ワールド内のばいきんくんオブジェクト
+}
+
+class Player {
+  プレイヤーオブジェクト
+}
+
+' 関連
+gohome -- World
+gohome -- Dealer
+World -- BaikinKun
+World -- UsagiSan
+World -- House
+World -- Field
+
+' 継承
+Player <|-- UsagiSan
+Player <|-- BaikinKun
+
+@enduml

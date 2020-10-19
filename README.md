@@ -11,7 +11,7 @@
 - スケジュール
 - [画面遷移図](screen_transition.md)
 - API設計
-- クラス設計
+- [クラス図](class.md)
 - データベース設計
   - SQLite
   - redis
