@@ -8,7 +8,7 @@
 - ターゲット層について
 - [システム構成図](system_architecture.md)
 - [システム化の範囲と目的](project_scope.md)
-- スケジュール
+- [スケジュール](schedule.md)
 - [画面遷移図](screen_transition.md)
 - API設計
 - [クラス図](class.md)
