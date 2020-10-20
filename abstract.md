@@ -1,14 +1,9 @@
 # アブストラクト
 
-- ソシャレの概要を書く(過去のスライドとか参考にしつつ)
-- ↓の情報も交えつつ
-- [元ネタ(ウサギと猟犬)](https://en.wikipedia.org/wiki/Hare_games)
-- [モック(Figma)](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=1%3A2)
+## SOCIAL RESISTANCEとは
 
-## SOCIAL RESISTANCE とは
-
-SOCIAL RESISTANCE(ソーシャルレジスタンス 以下、本作)ソーシャルディスタンスの大切さを学べるブラウザゲームである。  
-ジャンルは対戦サバイバルホラー、公式略称は「ソシャレジ」。
+SOCIAL RESISTANCE(ソーシャルレジスタンス 以下、本作)は、ソーシャルディスタンスの大切さを学べるブラウザゲームである。  
+ジャンルは対戦サバイバルホラー、公式略称は「ソシャレ」。
 
 ## SOCIAL RESISTANCEの概要
 
