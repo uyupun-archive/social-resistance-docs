@@ -10,6 +10,10 @@
 - [システム化の範囲と目的](project_scope.md)
 - [スケジュール](schedule.md)
 - [画面遷移図](screen_transition.md)
+- カンプ
+  - [v1](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=0%3A1)
+  - [v2](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=192%3A574)
+  - [v3](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=428%3A2)
 - API設計
 - [クラス図](class.md)
 - [DB設計](db.md)
