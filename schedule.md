@@ -4,7 +4,7 @@
 
 ### SOCIAL RESISTANCE
 
-#### Issue
+#### Issues
 
 - [ブラウザバック、リロードの検知](https://github.com/uyupun/social-resistance/issues/45)
 - [本番環境でのエラー解決](https://github.com/uyupun/social-resistance/issues/183)
@@ -12,7 +12,7 @@
 
 ### Mitsu
 
-#### Issue
+#### Issues
 
 - [秒数のカウント](https://github.com/uyupun/mitsu/issues/54)
 - [this._dealersインスタンスの管理](https://github.com/uyupun/mitsu/issues/52)
@@ -22,7 +22,7 @@
 
 ### SOCIAL RESISTANCE
 
-#### Issue
+#### Issues
 
 - [BGM・SE作成](https://github.com/uyupun/social-resistance/issues/12)
 - [極力スマホ対応する](https://github.com/uyupun/social-resistance/issues/185)
@@ -30,13 +30,13 @@
 
 ### Mitsu
 
-#### Issue
+#### Issues
 
 - [ルーム検索機能](https://github.com/uyupun/mitsu/issues/56)
 
 ### Lily
 
-#### Issue
+#### Issues
 
 - [環境構築](https://github.com/uyupun/lily/issues/1)
 - [認証方式の調査](https://github.com/uyupun/lily/issues/2)
