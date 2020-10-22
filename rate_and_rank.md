@@ -11,6 +11,6 @@
 |~1399|Virus|
 |~1599|Aerosol|
 |~1799|Cluster|
-|~1999|Pandemic|
+|~青天井|Pandemic|
 
 ※ レート500が初期値
