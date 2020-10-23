@@ -19,3 +19,27 @@
 - [DB設計](db.md)
 - WebSocketフロー
 - [レートとランク一覧](rate_and_rank.md)
+
+### 環境構築（PlantUML）
+
+開発環境はmacOSを想定。
+
+```bash
+# Javaがインストールされている前提です
+$ brew install graphviz
+$ brew install plantuml
+# png形式で出力される
+$ plantuml foo.pu
+```
+
+[VSCodeの拡張](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)を使用するのも良い。
+
+### 環境構築（API Blueprint + aglio）
+
+```bash
+$ npm install -g aglio
+# HTML形式で出力される
+$ aglio -i foo.md -o foo.html
+# API仕様書を開く
+$ open foo.html
+```
