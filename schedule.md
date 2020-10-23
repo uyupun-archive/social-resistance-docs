@@ -15,6 +15,7 @@
 
 ### 12月
 
+- [SOCIAL RESISTANCE](https://github.com/uyupun/social-resistance/milestone/4)
 - [Mitsu](https://github.com/uyupun/mitsu/milestone/4)
 - [Lily](https://github.com/uyupun/lily/milestone/2)
 
@@ -22,3 +23,7 @@
 
 現状、大きなタスクは存在しない。  
 積み残したタスク、バグを潰す期間にしたい（願望）
+
+### 2月
+
+v4のリリース（要検討）
