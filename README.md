@@ -15,8 +15,8 @@
   - [v2](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=192%3A574)
   - [v3](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=428%3A2)
 - API設計
-  - [Mitsu API](api_mitsu.html)
-  - [Lily API]()
+  - [Mitsu API](api_mitsu.md)
+  - [Lily API](api_lily.md)
 - [クラス図](class.md)
 - [DB設計](db.md)
 - WebSocketフロー
