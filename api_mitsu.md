@@ -19,8 +19,8 @@ HOST: http://mitsu.uyupun.tech/api/v1
             + text: `相手プレイヤーを募集する場合は、『うさぎさん』または『ばいきんくん』のどちらかを募集します。` (string) - テキスト
             + image: `/images/rules/rule_2.png` (string) - 画像
 
-## ワールドIDの生成 [GET /worldId]
-ワールドIDを生成する
+## 募集 [GET /recruit]
+ワールドID、トークンの生成
 
 + Request (application/json)
     + Attributes
@@ -32,8 +32,8 @@ HOST: http://mitsu.uyupun.tech/api/v1
         + token: `xxxx` (string) - アクセストークン
         + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
 
-## ワールドIDのチェック [GET /worldId/check]
-ワールドIDの正当性をチェックする
+## 参加 [GET /join]
+ワールドIDの正当性のチェック、トークンの生成
 
 + Request (application/json)
     + Attributes
@@ -44,3 +44,16 @@ HOST: http://mitsu.uyupun.tech/api/v1
         + validity: `true` (boolean) - ワールドIDが正当なものかどうか
         + token: `xxxx` (string) - アクセストークン
         + role: `2` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+
+## ワールド情報の確認 [GET /states]
+ワールドの情報（ワールドID、ステータス、作成日時）の確認  
+現状、本番環境では使用できない
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes
+        + id: `xxxx` (string) - ワールドID
+        + status: `xxxx` (string) - ステータス（initialized | waiting | playing | judged | disconnected）
+        + createdAt: `2020/12/01 01:17:00` (string) - 作成日時
