@@ -19,7 +19,7 @@
   - [Lily API](api_lily.md)
 - [クラス図](class.md)
 - [DB設計](db.md)
-- WebSocketフロー
+- [WebSocketフロー](web_socket_flow.md)
 - [レートとランク一覧](rate_and_rank.md)
 
 ### 環境構築（PlantUML）
