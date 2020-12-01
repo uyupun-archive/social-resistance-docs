@@ -1,0 +1,71 @@
+@startuml
+title WebSocketフロー
+participant "うさぎさん" as usagi
+participant "Mitsu" as server
+participant "ばいきんくん" as baikin
+
+activate server
+usagi -> server: connect
+activate usagi
+baikin -> server: connect
+activate baikin
+usagi -> server: join_world
+baikin -> server: join_world
+server --> usagi: feedback_position
+server --> baikin: feedback_position
+server --> usagi: feedback_position
+server --> baikin: feedback_position
+server --> usagi: get_words_and_baseword
+server --> baikin: get_words_and_baseword
+server --> usagi: get_turn
+server --> baikin: get_turn
+server --> usagi: get_countdown
+server --> baikin: get_countdown
+server --> usagi: declare_attack
+server --> baikin: declare_wait
+|||
+usagi -> server: attack
+server --> usagi: feedback_position
+server --> baikin: feedback_position
+server --> usagi: judge
+server --> baikin: judge
+usagi -> server: disconnect
+deactivate usagi
+baikin -> server: disconnect
+deactivate baikin
+
+newpage
+
+usagi -> server: connection
+activate usagi
+baikin -> server: connection
+activate baikin
+usagi -> server: join_world
+baikin -> server: join_world
+server --> usagi: feedback_position
+server --> baikin: feedback_position
+server --> usagi: feedback_position
+server --> baikin: feedback_position
+server --> usagi: get_words_and_baseword
+server --> baikin: get_words_and_baseword
+server --> usagi: get_turn
+server --> baikin: get_turn
+server --> usagi: get_countdown
+server --> baikin: get_countdown
+server --> usagi: declare_attack
+server --> baikin: declare_wait
+|||
+usagi -> server: disconnect
+deactivate usagi
+server --> baikin: notice_disconnect
+baikin -> server: disconnect
+deactivate baikin
+
+newpage
+
+usagi -> server: connection
+activate usagi
+server --> usagi: invalid_player
+usagi -> server: disconnect
+deactivate usagi
+@enduml
