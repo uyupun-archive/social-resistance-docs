@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://mitsu.uyupun.tech/api/v1
+HOST: http://mitsu.uyupun.tech/api/v2
 
 # Mitsu API
 ゲームの進行を主に担当するMitsuのWeb API仕様
@@ -24,7 +24,8 @@ HOST: http://mitsu.uyupun.tech/api/v1
 
 + Request (application/json)
     + Attributes
-        + recruit: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+        + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+        + isPublic: `true` (boolean, required) - ワールドを公開するどうか
 
 + Response 200 (application/json)
     + Attributes
@@ -57,3 +58,15 @@ HOST: http://mitsu.uyupun.tech/api/v1
         + id: `xxxx` (string) - ワールドID
         + status: `xxxx` (string) - ステータス（initialized | waiting | playing | judged | disconnected）
         + createdAt: `2020/12/01 01:17:00` (string) - 作成日時
+
+## ワールドの検索 [GET /search]
+ワールドを検索する
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes (array[object], fixed-type)
+        + (object)
+            + worldId: `xxxx` (string) - ワールドID
+            + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
