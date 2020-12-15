@@ -19,13 +19,24 @@ HOST: http://mitsu.uyupun.tech/api/v2
             + text: `相手プレイヤーを募集する場合は、『うさぎさん』または『ばいきんくん』のどちらかを募集します。` (string) - テキスト
             + image: `/images/rules/rule_2.png` (string) - 画像
 
-## 募集 [GET /recruit]
+## 募集（公開） [GET /recruit/public]
 ワールドID、トークンの生成
 
 + Request (application/json)
     + Attributes
         + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
-        + isPublic: `true` (boolean, required) - ワールドを公開するどうか
+
++ Response 200 (application/json)
+    + Attributes
+        + token: `xxxx` (string) - アクセストークン
+        + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+
+## 募集（非公開） [GET /recruit/private]
+ワールドID、トークンの生成
+
++ Request (application/json)
+    + Attributes
+        + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
 
 + Response 200 (application/json)
     + Attributes
@@ -64,9 +75,12 @@ HOST: http://mitsu.uyupun.tech/api/v2
 
 + Request (application/json)
     + Attributes
+        + page: `1` (number) - ページ番号
 
 + Response 200 (application/json)
-    + Attributes (array[object], fixed-type)
-        + (object)
-            + worldId: `xxxx` (string) - ワールドID
-            + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+    + Attributes
+        + page: `1` (number) - ページ番号
+        + list (array[object], fixed-type)
+            + (object)
+                + worldId: `xxxx` (string) - ワールドID
+                + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
