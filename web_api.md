@@ -1,8 +1,41 @@
 FORMAT: 1A
 HOST: http://mitsu.uyupun.tech/api/v2
 
-# Mitsu API
-ゲームの進行を主に担当するMitsuのWeb API仕様
+# Web APIドキュメント
+SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
+
+## 登録 [POST /register]
+ユーザーを登録する  
+登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する
+
++ Request (application/json)
+    + Attributes
+        + id: `xxxx` (string, required) - ユーザーのID
+        + password: `xxxx` (string, required) - パスワード
+
++ Response 200 (application/json)
+    + Attributes
+        + token: `xxxx` (string) - JWT
+
+## ログイン [POST /login]
+ログインする  
+登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する
+
++ Request (application/json)
+    + Attributes
+        + id: `xxxx` (string, required) - ユーザーのID
+        + password: `xxxx` (string, required) - パスワード
+
++ Response 200 (application/json)
+    + Attributes
+        + token: `xxxx` (string) - JWT
+
+## ログアウト [POST /logout]
+ログアウトする
+
++ Request (application/json)
+
++ Response 200 (application/json)
 
 ## ルールの取得 [GET /rules]
 ルールを取得する
