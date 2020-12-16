@@ -14,10 +14,12 @@
   - [v1](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=0%3A1)
   - [v2](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=192%3A574)
   - [v3](https://www.figma.com/file/SYnE52gQISHkQLZV9NPJG1/Social-Resistance?node-id=428%3A2)
-- [Web APIドキュメント](web_api.md)
+- [Web APIドキュメント](web_api.md) （[HTML版](web_api.html)）
 - [クラス図](class.md)
 - [DB設計](db.md)
 - [WebSocketフロー](web_socket_flow.md)
+- 状態遷移図
+- ワールドの状態について
 - [レートとランク一覧](rate_and_rank.md)
 
 ### 環境構築（PlantUML）
