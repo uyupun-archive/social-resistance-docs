@@ -19,7 +19,7 @@
 - [DB設計](db.md)
 - [WebSocketフロー](web_socket_flow.md)
 - 状態遷移図
-- ワールドの状態について
+- [ワールドのステータスについて](world_status.md)
 - [レートとランク一覧](rate_and_rank.md)
 
 ### 環境構築（PlantUML）
