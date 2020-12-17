@@ -1,4 +1,4 @@
-# 単語情報（SQLite）
+# 単語情報（MySQL）
 
 - word2vecs
 
@@ -9,27 +9,24 @@
 |move_x|実数|単語のベクトル値（x）|
 |move_y|整数|単語のベクトル値（y）|
 
-# ワールド情報（Redis）
-
-- Key
-  - worldId
-
-- Value
-  - worldId
-    - ワールドID
-  - tokens.1
-    - うさぎさんのトークン
-  - tokens.2
-    - ばいきんくんのトークン
+# ワールド情報（Expressに内包された独自のデータストア）
 
 ```json
-{
-  "worldId": "xxxx",
-  "tokens": {
-    "1": "xxxx",
-    "2": "xxxx"
+[
+  {
+    "id": "xxxx",
+    "tokens": {
+      "1": "xxxx",
+      "2": "xxxx"
+    }
+    "field": Field,
+    "turn": Turn,
+    "word": Word,
+    "dealer": Dealer,
+    "createdAt": "xxxx",
+    "status": 1
   }
-}
+]
 ```
 
 # ユーザー情報（MySQL）

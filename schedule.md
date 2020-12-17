@@ -10,14 +10,13 @@
 
 - [SOCIAL RESISTANCE](https://github.com/uyupun/social-resistance/milestone/2)
 - [Mitsu](https://github.com/uyupun/mitsu/milestone/2)
-- [Lily](https://github.com/uyupun/lily/milestone/1)
 - [ドキュメント](https://github.com/uyupun/social-resistance-docs/milestone/2)
 
 ### 12月
 
 - [SOCIAL RESISTANCE](https://github.com/uyupun/social-resistance/milestone/4)
 - [Mitsu](https://github.com/uyupun/mitsu/milestone/4)
-- [Lily](https://github.com/uyupun/lily/milestone/2)
+- [ドキュメント](https://github.com/uyupun/social-resistance-docs/milestone/3)
 
 ### 1月
 
