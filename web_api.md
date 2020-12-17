@@ -52,24 +52,13 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
             + text: `相手プレイヤーを募集する場合は、『うさぎさん』または『ばいきんくん』のどちらかを募集します。` (string) - テキスト
             + image: `/images/rules/rule_2.png` (string) - 画像
 
-## 募集（公開） [GET /recruit/public]
+## 募集 [GET /recruit]
 ワールドID、トークンの生成
 
 + Request (application/json)
     + Attributes
         + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
-
-+ Response 200 (application/json)
-    + Attributes
-        + token: `xxxx` (string) - アクセストークン
-        + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
-
-## 募集（非公開） [GET /recruit/private]
-ワールドID、トークンの生成
-
-+ Request (application/json)
-    + Attributes
-        + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
+        + isPublic: `true` (boolean, required) - ワールドを公開するかどうか
 
 + Response 200 (application/json)
     + Attributes
