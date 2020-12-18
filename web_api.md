@@ -10,7 +10,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Request (application/json)
     + Attributes
-        + id: `xxxx` (string, required) - ユーザーのID
+        + userId: `xxxx` (string, required) - ユーザーのID
         + password: `xxxx` (string, required) - パスワード
 
 + Response 200 (application/json)
@@ -23,7 +23,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Request (application/json)
     + Attributes
-        + id: `xxxx` (string, required) - ユーザーのID
+        + userId: `xxxx` (string, required) - ユーザーのID
         + password: `xxxx` (string, required) - パスワード
 
 + Response 200 (application/json)

@@ -2,13 +2,13 @@
 <section id="" class="resource-group"><h2 class="group-heading">Resource Group <a href="#" class="permalink">&para;</a></h2><div id="登録" class="resource"><h3 class="resource-heading">登録 <a href="#登録" class="permalink">&nbsp;&para;</a></h3><div id="登録-post" class="action post"><h4 class="action-heading"><div class="name">登録</div><a href="#登録-post" class="method post">POST</a><code class="uri">/register</code></h4><p>ユーザーを登録する<br>
 登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する</p>
 <h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname">http://mitsu.uyupun.tech/api/v2</span>/register</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span></span>,
+  "<span class="hljs-attribute">userId</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span></span>,
   "<span class="hljs-attribute">password</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span>
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
   "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
   "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">id</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">userId</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"ユーザーのID"</span>
     </span>}</span>,
@@ -18,7 +18,7 @@
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
-    <span class="hljs-string">"id"</span>,
+    <span class="hljs-string">"userId"</span>,
     <span class="hljs-string">"password"</span>
   ]
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
@@ -35,13 +35,13 @@
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="ログイン" class="resource"><h3 class="resource-heading">ログイン <a href="#ログイン" class="permalink">&nbsp;&para;</a></h3><div id="ログイン-post" class="action post"><h4 class="action-heading"><div class="name">ログイン</div><a href="#ログイン-post" class="method post">POST</a><code class="uri">/login</code></h4><p>ログインする<br>
 登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する</p>
 <h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname">http://mitsu.uyupun.tech/api/v2</span>/login</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span></span>,
+  "<span class="hljs-attribute">userId</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span></span>,
   "<span class="hljs-attribute">password</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span>
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
   "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
   "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">id</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">userId</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"ユーザーのID"</span>
     </span>}</span>,
@@ -51,7 +51,7 @@
     </span>}
   </span>}</span>,
   "<span class="hljs-attribute">required</span>": <span class="hljs-value">[
-    <span class="hljs-string">"id"</span>,
+    <span class="hljs-string">"userId"</span>,
     <span class="hljs-string">"password"</span>
   ]
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
