@@ -19,7 +19,8 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 ## ログイン [POST /login]
 ログインする  
-登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する
+登録/ログイン後、各APIでは生成されたトークンをAuthorizationヘッダーのBearerスキーム上に載せて送信する  
+ログアウトはクライアント側で行う
 
 + Request (application/json)
     + Attributes
@@ -29,13 +30,6 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 + Response 200 (application/json)
     + Attributes
         + token: `xxxx` (string) - JWT
-
-## ログアウト [POST /logout]
-ログアウトする
-
-+ Request (application/json)
-
-+ Response 200 (application/json)
 
 ## ルールの取得 [GET /rules]
 ルールを取得する
