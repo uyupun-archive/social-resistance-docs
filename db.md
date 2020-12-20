@@ -18,13 +18,14 @@
     "tokens": {
       "1": "xxxx",
       "2": "xxxx"
-    }
+    },
     "field": Field,
     "turn": Turn,
     "word": Word,
     "dealer": Dealer,
     "createdAt": "xxxx",
-    "status": 1
+    "status": 1,
+    "isPublic": true
   }
 ]
 ```
@@ -37,6 +38,5 @@
 |:--|:--|:--|
 |user_id|文字列|ユーザーID|
 |password|文字列|ハッシュ化されたパスワード|
-|token|文字列|アクセストークン|
 |created_at|日付|作成日|
 |updated_at|日付|更新日|
