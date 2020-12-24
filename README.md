@@ -18,7 +18,7 @@
 - [クラス図](class.md)
 - [DB設計](db.md)
 - [WebSocketフロー](web_socket_flow.md)
-- 状態遷移図
+- [状態遷移図](state_transition.md)
 - [ワールドのステータスについて](world_status.md)
 - [レートとランク一覧](rate_and_rank.md)
 
