@@ -91,8 +91,8 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Request (application/json)
     + Attributes
-        + page: `1` (number) - ページ番号
-        + limit: `10` (number) - ワールドの取得件数
+        + page: `1` (number, required) - ページ番号
+        + limit: `10` (number, required) - ワールドの取得件数
 
 + Response 200 (application/json)
     + Attributes
