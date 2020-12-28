@@ -15,9 +15,9 @@
 [
   {
     "id": "xxxx",
-    "tokens": {
-      "1": "xxxx",
-      "2": "xxxx"
+    "players": {
+      "1": "<user_id>",
+      "2": "<user_id>"
     },
     "field": Field,
     "turn": Turn,
