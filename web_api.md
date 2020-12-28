@@ -99,7 +99,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + page: `1` (number) - ページ番号
         + limit: `10` (number) - ワールドの取得件数
         + total: `20` (number) - ワールドの合計件数
-        + list (array[object], fixed-type)
+        + worlds (array[object], fixed-type)
             + (object)
-                + worldId: `xxxx` (string) - ワールドID
+                + id: `xxxx` (string) - ワールドID
                 + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
