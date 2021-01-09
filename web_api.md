@@ -100,3 +100,94 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + id: `xxxx` (string) - ワールドID
         + status: `xxxx` (string) - ステータス（initialized | waiting | playing | judged | disconnected）
         + createdAt: `2020/12/01 01:17:00` (string) - 作成日時
+
+## プロフィールアイコンの取得 [GET /user-icon]
+プロフィールのアイコンの一覧を取得する
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes (array[object], fixed-type)
+        + (object)
+            + id: `1` (number) アイコンの種類
+            + name: `うさぎさん` (string) - アイコンの名前
+            + image: `/images/user-icon/usagisan.png` (string) - アイコンの画像
+
+## レート一覧の取得 [GET /rate]
+レートの一覧を取得する
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes (array[object], fixed-type)
+        + (object)
+            + name: `Pandemic` (string) - レート名
+            + rate: `1800` (number) - レート数
+            + image: `/images/rate/pandemic.png` (string) - レートのアイコン画像
+
+## ランキングの取得 [GET /ranking]
+ランキングを取得する
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes (array[object], fixed-type)
+        + (object)
+            + userId: `xxxx` (string) - ユーザーのID
+            + rate: `1800` (number) - レート数
+
+## プロフィール [/profile]
+
+### 取得 [GET]
+ユーザーのプロフィールを取得する
+
++ Request (application/json)
+    + Attributes
+        + userId: `xxxx` (string, required) - ユーザーのID
+
++ Response 200 (application/json)
+    + Attributes
+        + userIcon: `/images/user-icon/usagisan.png` (string) - ユーザーのアイコン画像
+        + rate: `1200` (number) - レート数
+        + rateIcon: `/images/rate/virus.png` (string) - レートのアイコン画像
+        + history
+            + win: `10` (number) - 勝利数
+            + lose: `5` (number) - 敗北数
+
+### 変更 [PATCH]
+ユーザーのプロフィールを変更する
+
++ Request (application/json)
+    + Attributes
+        + userId: `xxxx` (string) - ユーザーのID
+        + icon: `1` (number) - アイコンの種類
+
++ Response 200 (application/json)
+    + Attributes
+
+## スキン [/skin]
+
+### 取得 [GET]
+スキンを取得する
+
++ Request (application/json)
+    + Attributes
+
++ Response 200 (application/json)
+    + Attributes
+        + id: `1` (number) - スキンの種類
+        + name: `うさぎさん` (string) - スキンの名前
+        + image: `/images/skin/usagisan.png` (string) - スキンの画像
+
+### 変更 [PATCH]
+スキンを変更する
+
++ Request (application/json)
+    + Attributes
+        + id: `1` (number) - スキンの種類
+
++ Response 200 (application/json)
+    + Attributes
