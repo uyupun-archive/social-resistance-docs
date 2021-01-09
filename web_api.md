@@ -41,10 +41,10 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
     + Attributes (array[object], fixed-type)
         + (object)
             + text: `プレイヤーは相手プレイヤーを募集するか、ワールドへ参加するかを選択します。` (string) - テキスト
-            + image: `/images/rules/rule_1.png` (string) - 画像
+            + image: `/images/rules/rule_1.png` (string) - 画像のパス
         + (object)
             + text: `相手プレイヤーを募集する場合は、『うさぎさん』または『ばいきんくん』のどちらかを募集します。` (string) - テキスト
-            + image: `/images/rules/rule_2.png` (string) - 画像
+            + image: `/images/rules/rule_2.png` (string) - 画像のパス
 
 ## 募集 [GET /recruit]
 ワールドID、トークンの生成
@@ -101,7 +101,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + status: `xxxx` (string) - ステータス（initialized | waiting | playing | judged | disconnected）
         + createdAt: `2020/12/01 01:17:00` (string) - 作成日時
 
-## プロフィールアイコンの取得 [GET /user-icon]
+## プロフィールアイコンの取得 [GET /avatars]
 プロフィールのアイコンの一覧を取得する
 
 + Request (application/json)
@@ -112,10 +112,10 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + (object)
             + id: `1` (number) アイコンの種類
             + name: `うさぎさん` (string) - アイコンの名前
-            + image: `/images/user-icon/usagisan.png` (string) - アイコンの画像
+            + image: `/images/avatars/usagisan.png` (string) - アイコンの画像のパス
 
-## レート一覧の取得 [GET /rate]
-レートの一覧を取得する
+## ランク一覧の取得 [GET /ranks]
+ランクの一覧を取得する
 
 + Request (application/json)
     + Attributes
@@ -125,7 +125,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + (object)
             + name: `Pandemic` (string) - レート名
             + rate: `1800` (number) - レート数
-            + image: `/images/rate/pandemic.png` (string) - レートのアイコン画像
+            + image: `/images/ranks/pandemic.png` (string) - ランクのアイコン画像のパス
 
 ## ランキングの取得 [GET /ranking]
 ランキングを取得する
@@ -138,6 +138,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + (object)
             + userId: `xxxx` (string) - ユーザーのID
             + rate: `1800` (number) - レート数
+            + rankImage: `/images/ranks/pandemic.png` (string) - ランクのアイコン画像のパス
 
 ## プロフィール [/profile]
 
@@ -150,9 +151,9 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Response 200 (application/json)
     + Attributes
-        + userIcon: `/images/user-icon/usagisan.png` (string) - ユーザーのアイコン画像
+        + avatar: `/images/avatars/sagisan.png` (string) - ユーザーのアイコン画像
         + rate: `1200` (number) - レート数
-        + rateIcon: `/images/rate/virus.png` (string) - レートのアイコン画像
+        + rankImage: `/images/ranks/virus.png` (string) - レートのアイコン画像
         + history
             + win: `10` (number) - 勝利数
             + lose: `5` (number) - 敗北数
@@ -168,19 +169,21 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 + Response 200 (application/json)
     + Attributes
 
-## スキン [/skin]
+## スキン [/skins]
 
 ### 取得 [GET]
 スキンを取得する
 
 + Request (application/json)
     + Attributes
+        + role: `1` (number, required) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
 
 + Response 200 (application/json)
-    + Attributes
-        + id: `1` (number) - スキンの種類
-        + name: `うさぎさん` (string) - スキンの名前
-        + image: `/images/skin/usagisan.png` (string) - スキンの画像
+    + Attributes (array[object], fixed-type)
+        + (object)
+            + id: `1` (number) - スキンの種類
+            + name: `うさぎさん` (string) - スキンの名前
+            + image: `/images/skin/usagisan.png` (string) - スキンの画像
 
 ### 変更 [PATCH]
 スキンを変更する
@@ -188,6 +191,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 + Request (application/json)
     + Attributes
         + id: `1` (number) - スキンの種類
+        + role: `1` (number) - プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）
 
 + Response 200 (application/json)
     + Attributes
