@@ -124,7 +124,9 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
     + Attributes (array[object], fixed-type)
         + (object)
             + name: `Pandemic` (string) - レート名
-            + rate: `1800` (number) - レート数
+            + rate
+                + lower: `1800` (number) - レートの最小値
+                + upper: `9999` (number) - レートの最大値
             + image: `/images/ranks/pandemic.png` (string) - ランクのアイコン画像のパス
 
 ## ランキングの取得 [GET /ranking]
@@ -138,7 +140,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
         + (object)
             + userId: `xxxx` (string) - ユーザーのID
             + rate: `1800` (number) - レート数
-            + rankImage: `/images/ranks/pandemic.png` (string) - ランクのアイコン画像のパス
+            + image: `/images/ranks/pandemic.png` (string) - ランクのアイコン画像のパス
 
 ## プロフィール [/profile]
 
@@ -151,7 +153,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Response 200 (application/json)
     + Attributes
-        + avatar: `/images/avatars/sagisan.png` (string) - ユーザーのアイコン画像
+        + avatar: `/images/avatars/usagisan.png` (string) - ユーザーのアイコン画像
         + rate: `1200` (number) - レート数
         + rankImage: `/images/ranks/virus.png` (string) - レートのアイコン画像
         + history
@@ -164,7 +166,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 + Request (application/json)
     + Attributes
         + userId: `xxxx` (string) - ユーザーのID
-        + icon: `1` (number) - アイコンの種類
+        + iconType: `1` (number) - アイコンの種類
 
 + Response 200 (application/json)
     + Attributes
