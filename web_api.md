@@ -155,7 +155,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
     + Attributes
         + avatar: `/images/avatars/usagisan.png` (string) - ユーザーのアイコン画像
         + rate: `1200` (number) - レート数
-        + rankImage: `/images/ranks/virus.png` (string) - レートのアイコン画像
+        + rank: `/images/ranks/virus.png` (string) - レートのアイコン画像
         + history
             + win: `10` (number) - 勝利数
             + lose: `5` (number) - 敗北数
@@ -166,7 +166,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 + Request (application/json)
     + Attributes
         + userId: `xxxx` (string) - ユーザーのID
-        + iconType: `1` (number) - アイコンの種類
+        + avatarType: `1` (number) - アイコンの種類
 
 + Response 200 (application/json)
     + Attributes

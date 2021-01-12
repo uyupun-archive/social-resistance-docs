@@ -367,7 +367,7 @@
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">avatar</span>": <span class="hljs-value"><span class="hljs-string">"/images/avatars/usagisan.png"</span></span>,
   "<span class="hljs-attribute">rate</span>": <span class="hljs-value"><span class="hljs-number">1200</span></span>,
-  "<span class="hljs-attribute">rankImage</span>": <span class="hljs-value"><span class="hljs-string">"/images/ranks/virus.png"</span></span>,
+  "<span class="hljs-attribute">rank</span>": <span class="hljs-value"><span class="hljs-string">"/images/ranks/virus.png"</span></span>,
   "<span class="hljs-attribute">history</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">win</span>": <span class="hljs-value"><span class="hljs-number">10</span></span>,
     "<span class="hljs-attribute">lose</span>": <span class="hljs-value"><span class="hljs-number">5</span>
@@ -384,7 +384,7 @@
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"レート数"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">rankImage</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">rank</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"レートのアイコン画像"</span>
     </span>}</span>,
@@ -405,7 +405,7 @@
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="プロフィール-patch" class="action patch"><h4 class="action-heading"><div class="name">変更</div><a href="#プロフィール-patch" class="method patch">PATCH</a><code class="uri">/profile</code></h4><p>ユーザーのプロフィールを変更する</p>
 <h4>Example URI</h4><div class="definition"><span class="method patch">PATCH</span>&nbsp;<span class="uri"><span class="hostname">http://mitsu.uyupun.tech/api/v2</span>/profile</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">userId</span>": <span class="hljs-value"><span class="hljs-string">"xxxx"</span></span>,
-  "<span class="hljs-attribute">iconType</span>": <span class="hljs-value"><span class="hljs-number">1</span>
+  "<span class="hljs-attribute">avatarType</span>": <span class="hljs-value"><span class="hljs-number">1</span>
 </span>}</code></pre><div style="height: 1px;"></div><h5>Schema</h5><pre><code>{
   "<span class="hljs-attribute">$schema</span>": <span class="hljs-value"><span class="hljs-string">"http://json-schema.org/draft-04/schema#"</span></span>,
   "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
@@ -414,7 +414,7 @@
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"ユーザーのID"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">iconType</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">avatarType</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"アイコンの種類"</span>
     </span>}
@@ -477,7 +477,7 @@
       "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"プレイヤーの種類（1: うさぎさん | 2: ばいきんくん）"</span>
     </span>}
   </span>}
-</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 10 Jan 2021</p><script>/* eslint-env browser */
+</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 12 Jan 2021</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 
