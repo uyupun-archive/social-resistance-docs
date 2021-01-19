@@ -165,8 +165,7 @@ SOCIAL RESISTANCEのバックエンドAPIサーバ・MitsuのWeb API仕様書
 
 + Request (application/json)
     + Attributes
-        + userId: `xxxx` (string) - ユーザーのID
-        + avatarType: `1` (number) - アイコンの種類
+        + avatarId: `1` (number) - アイコンの種類
 
 + Response 200 (application/json)
     + Attributes
