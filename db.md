@@ -38,5 +38,11 @@
 |:--|:--|:--|
 |user_id|文字列|ユーザーID|
 |password|文字列|ハッシュ化されたパスワード|
+|avatar_id|数値|アバターID|
+|skin_pekora_id|数値|うさぎさんのスキンID|
+|skin_baikinkun_id|数値|ばいきんくんのスキンID|
+|rate|数値|レート|
+|win|数値|勝利数|
+|lose|数値|敗北数|
 |created_at|日付|作成日|
 |updated_at|日付|更新日|
